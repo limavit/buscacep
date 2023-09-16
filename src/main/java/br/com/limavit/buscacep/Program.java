@@ -12,9 +12,8 @@ public class Program {
         String cep = new Scanner(System.in).nextLine();
         Endereco endereco = ServicoDeCep.buscaEnderecoPelo(cep);
 
-        System.out.println("Rua: " + endereco.getLogradouro());
-        System.out.println("Bairro: " + endereco.getBairro());
-        System.out.println("Localidade: " + endereco.getLocalidade());
+        System.out.println(endereco.toString());
+        
         
         
 
